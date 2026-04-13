@@ -13,7 +13,11 @@ export default [
       },
     },
     rules: {
-      "no-unused-vars": ["warn", { "argsIgnorePattern": "^_|^err$|^next$" }],
+      "no-unused-vars": ["warn", { 
+        "vars": "all",
+        "args": "none",
+        "caughtErrors": "none"
+      }],
       "no-undef": "error",
     },
   },
